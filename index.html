@@ -123,7 +123,7 @@
             var str = `[${hour}:${minute}:${second}]`;
             $('.time').html(str);
             console.log("Nice try. You won't find anything here.");
-            $(window).bind('click keypress tap', function () {
+            $(window).on('click keypress tap', function () {
                 click++;
                 if (click == 1) {
                     $('.t1').addClass('active');
