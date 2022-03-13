@@ -22,7 +22,7 @@ function init() {
                 $('.t2').addClass('ready');
             }, 5000);
         }
-        if (click == 2 && $('.t2').hasClass('ready')) {
+        if (click > 1 && $('.t2').hasClass('ready')) {
             $('.t2').addClass('active');
             speak('Happy Birthday idiot');
             setTimeout(function () {
